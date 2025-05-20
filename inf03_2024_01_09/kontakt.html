@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Komputery</title>
+    <link rel="stylesheet" href="styl.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <script>
+      function handleSubmit(event) {
+        window.alert("ok");
+        console.log(1);
+        event.preventDefault();
+      }
+    </script>
+  </head>
+  <body>
+    <header><img src="animacja.gif" alt="" /></header>
+    <div class="menu">
+      <a href="/">Strona Główna</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+    <main>
+      <div class="blok" id="blok-k1"></div>
+      <div class="blok" id="blok-k2">
+        <h2>Kontakt</h2>
+        <form action="" method="POST" onsubmit="handleSubmit(event)">
+          <table>
+            <tr>
+              <td>Imię:</td>
+              <td><input type="text" required /></td>
+            </tr>
+            <tr>
+              <td>Nazwisko:</td>
+              <td><input type="text" required /></td>
+            </tr>
+            <tr>
+              <td>E-mail:</td>
+              <td><input type="email" name="" id="" required /></td>
+            </tr>
+            <tr>
+              <td>Zgłoszenie:</td>
+              <td>
+                <select name="" id="">
+                  <option value="naprawa_komputerow">naprawa komputerów</option>
+                  <option value="odzyskiwanie_danych">
+                    odzyskiwanie danych
+                  </option>
+                  <option value="wirusy">wirusy</option>
+                  <option value="konfiguracja_lan">konfiguracja LAN</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <label>
+                  <input type="checkbox" value="" id="" checked />
+                  Wyślij kopię wiadomości
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <button type="reset">Czyść</button>
+                <button type="submit" value="submit">Wyślij</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+        <hr />
+      </div>
+      <div class="blok" id="blok-k3"></div>
+    </main>
+    <footer>Autor: <i>00000000000</i></footer>
+  </body>
+</html>
